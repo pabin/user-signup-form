@@ -6,6 +6,13 @@
   padding: 120px;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile and tablets: */
+  .container {
+    padding: 15px;
+  }
+}
+
 .title {
   text-align: center;
   color: #FFF;

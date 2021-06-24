@@ -25,6 +25,7 @@ const Form  = () => {
   const [email, setEmail]= useState('');
   const [password, setPassword]= useState('');
   const [role, setRole]= useState('');
+  const [currentStep, setCurrentStep]= useState(1);
 
   const [validationError, setValidationError] = useState(false);
   const [passwordValidationErr, setPasswordValidationErr] = useState(false);
@@ -61,11 +62,13 @@ const Form  = () => {
   }
 
   const onSubmit = () => {
+    setCurrentStep(2);
     console.log('on form submit');
   }
 
   return (
     <div className={styles.container}>
+      <span className={styles.stepCount}>Step { currentStep } of 3 . . .</span>
       <div className={styles.formContainer}>
         <p className={styles.title}>{ FORM_HEADING }</p>
         <p>{ ALREADY_HAVE_ACCOUNT_MSG } <a href="#login">{SIGIN_IN}</a></p>
