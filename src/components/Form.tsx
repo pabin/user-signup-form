@@ -31,14 +31,13 @@ const Form  = () => {
   const [passwordValidationErr, setPasswordValidationErr] = useState(false);
 
   const validateEmail = (emailValue: string) => {
+    setEmail(emailValue)
     if (!emailValue) {
-      setEmail('')
       setValidationError(false);
       return;
     };
 
     if (isEmail(emailValue)) {
-      setEmail(emailValue)
       setValidationError(false);
     } else {
       setValidationError(true);
@@ -46,17 +45,15 @@ const Form  = () => {
   }
 
   const validatePassword = (passwordValue: string) => {
+    setPassword(passwordValue);
     if (!passwordValue) {
-      setPassword('');
       setPasswordValidationErr(false);
       return;
     };
 
     if (passwordValue.length >= 8) {
-      setPassword(passwordValue);
       setPasswordValidationErr(false);
     } else {
-      setPassword('');
       setPasswordValidationErr(true);
     }
   }
@@ -64,6 +61,13 @@ const Form  = () => {
   const onSubmit = () => {
     setCurrentStep(2);
     console.log('on form submit');
+  }
+
+  const isValidData = () => {
+    if (name && isEmail(email) && password.length >= 8 && role) {
+      return true;
+    }
+    return false;
   }
 
   return (
@@ -77,7 +81,7 @@ const Form  = () => {
           <FormInput type={EMAIL} name={EMAIL_ADDRESS} value={email} setValue={validateEmail} validationError={validationError} />
           <FormSelect setValue={setRole} />
           <FormInput type={PASSWORD} name={PASSWORD_LABEL} value={password} setValue={validatePassword} validationError={passwordValidationErr}/>
-          <Button title={BUTTON_LABEL} onClick={onSubmit} disabled={name && email && password && role ? false : true}/>
+          <Button title={BUTTON_LABEL} onClick={onSubmit} disabled={isValidData() ? false : true}/>
         </div>
         <p className={styles.footerText}>{ AGGREEMENT_TEXT } <a href="#terms-od-service">{TERMS_TEXT}</a> and <a href="#privacy-policy">{PRIVACY_TEXT}</a></p>
       </div>
