@@ -1,0 +1,19 @@
+.container {
+  background-color: #3364FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px;
+}
+
+.title {
+  text-align: center;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.description {
+  color: #FFF;
+  font-size: larger;
+}

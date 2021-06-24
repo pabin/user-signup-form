@@ -1,0 +1,2 @@
+export const HEADING_TITLE = 'Dummy Heading';
+export const HEADING_DESCRIPTION = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore at dolore magna aliqua';
