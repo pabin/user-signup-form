@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders Heading component correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <p
+        class="title"
+      >
+        Dummy Heading
+      </p>
+      <p
+        class="description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore at dolore magna aliqua
+      </p>
+    </div>
+  </div>
+</body>
+`;

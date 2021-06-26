@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   FORM_HEADING,
   ALREADY_HAVE_ACCOUNT_MSG,
@@ -70,9 +70,15 @@ const Form  = () => {
     return false;
   }
 
+  // console.log('name', name);
+  // console.log('password', password);
+  // console.log('email', email);
+  // console.log('role', role);
+
+
   return (
     <div className={styles.container}>
-      <span className={styles.stepCount}>Step { currentStep } of 3 . . .</span>
+      <span data-testid="currentStep" className={styles.stepCount}>Step { currentStep } of 3 . . .</span>
       <div className={styles.formContainer}>
         <p className={styles.title}>{ FORM_HEADING }</p>
         <p>{ ALREADY_HAVE_ACCOUNT_MSG } <a href="#login">{SIGIN_IN}</a></p>

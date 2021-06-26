@@ -7,7 +7,6 @@
 .fieldset {
   border-radius: 5px;
   border: 1px solid #E5E7E9;
-  border: 5px -webkit-focus-ring-color;
   height: 45px;
   position: relative;
 }
@@ -69,4 +68,9 @@
   background: url(../../assets/icons/down_arrow.png) 96% center no-repeat !important;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.select:focus {
+  border: 1px solid rgb(2, 114, 194);
+  outline: none !important;
 }

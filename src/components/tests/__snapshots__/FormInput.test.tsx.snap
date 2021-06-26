@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput when input type is email renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <fieldset
+        class="fieldset"
+      >
+        <legend
+          class="legend"
+          data-testid="legend-email"
+        >
+          email
+        </legend>
+        <input
+          class="input"
+          data-testid="email"
+          placeholder="email"
+          type="email"
+        />
+      </fieldset>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`FormInput when input type is email renders correctly when there is validationError 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <fieldset
+        class="fieldsetError fieldset"
+      >
+        <legend
+          class="legendError legend"
+          data-testid="legend-email"
+        >
+          email
+        </legend>
+        <input
+          class="input"
+          data-testid="email"
+          placeholder="email"
+          type="email"
+        />
+      </fieldset>
+      <span
+        class="helpText validationError"
+        data-testid="emailError"
+      >
+        Please enter a valid email address
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`FormInput when input type is password renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <fieldset
+        class="fieldset"
+      >
+        <legend
+          class="legend"
+          data-testid="legend-Password"
+        >
+          Password
+        </legend>
+        <input
+          class="input"
+          data-testid="Password"
+          placeholder="Password"
+          type="password"
+        />
+        <img
+          alt="eye"
+          class="icon"
+          data-testid="eye"
+          height="18"
+          src="eye.png"
+          width="18"
+        />
+      </fieldset>
+      <span
+        class="helpText"
+        data-testid="passwordHelpText"
+      >
+        Minimum 8 Characters
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`FormInput when input type is password renders correctly when there is validationError 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <fieldset
+        class="fieldsetError fieldset"
+      >
+        <legend
+          class="legendError legend"
+          data-testid="legend-Password"
+        >
+          Password
+        </legend>
+        <input
+          class="input"
+          data-testid="Password"
+          placeholder="Password"
+          type="password"
+        />
+        <img
+          alt="eye"
+          class="icon"
+          data-testid="eye"
+          height="18"
+          src="eye.png"
+          width="18"
+        />
+      </fieldset>
+      <span
+        class="helpText validationError"
+        data-testid="passwordHelpText"
+      >
+        Minimum 8 Characters
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`FormInput when input type is text renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <fieldset
+        class="fieldset"
+      >
+        <legend
+          class="legend"
+          data-testid="legend-Your Name"
+        >
+          Your Name
+        </legend>
+        <input
+          class="input"
+          data-testid="Your Name"
+          placeholder="Your Name"
+          type="text"
+        />
+      </fieldset>
+    </div>
+  </div>
+</body>
+`;

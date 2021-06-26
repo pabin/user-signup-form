@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSelect renders FormSelect component correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <select
+        class="select"
+        data-testid="form-select"
+        id="cars"
+        name="cars"
+      >
+        <option
+          value=""
+        >
+          I would describe my user type as
+        </option>
+        <option
+          value="Developer"
+        >
+          Developer
+        </option>
+        <option
+          value="QA Engineer"
+        >
+          QA Engineer
+        </option>
+        <option
+          value="System Admin"
+        >
+          System Admin
+        </option>
+      </select>
+    </div>
+  </div>
+</body>
+`;

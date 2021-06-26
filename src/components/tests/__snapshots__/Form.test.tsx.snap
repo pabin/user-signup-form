@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form renders Form component correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <span
+        class="stepCount"
+        data-testid="currentStep"
+      >
+        Step 
+        1
+         of 3 . . .
+      </span>
+      <div
+        class="formContainer"
+      >
+        <p
+          class="title"
+        >
+          Let's set up your account
+        </p>
+        <p>
+          Already have an account?
+           
+          <a
+            href="#login"
+          >
+            Sign in
+          </a>
+        </p>
+        <div
+          class="form"
+        >
+          <div
+            class="container"
+          >
+            <fieldset
+              class="fieldset"
+            >
+              <legend
+                class="legend"
+                data-testid="legend-Your Name"
+              />
+              <input
+                class="input"
+                data-testid="Your Name"
+                placeholder="Your Name"
+                type="text"
+              />
+            </fieldset>
+          </div>
+          <div
+            class="container"
+          >
+            <fieldset
+              class="fieldset"
+            >
+              <legend
+                class="legend"
+                data-testid="legend-Email Address"
+              />
+              <input
+                class="input"
+                data-testid="Email Address"
+                placeholder="Email Address"
+                type="email"
+              />
+            </fieldset>
+          </div>
+          <div
+            class="container"
+          >
+            <select
+              class="select"
+              data-testid="form-select"
+              id="cars"
+              name="cars"
+            >
+              <option
+                value=""
+              >
+                I would describe my user type as
+              </option>
+              <option
+                value="Developer"
+              >
+                Developer
+              </option>
+              <option
+                value="QA Engineer"
+              >
+                QA Engineer
+              </option>
+              <option
+                value="System Admin"
+              >
+                System Admin
+              </option>
+            </select>
+          </div>
+          <div
+            class="container"
+          >
+            <fieldset
+              class="fieldset"
+            >
+              <legend
+                class="legend"
+                data-testid="legend-Password"
+              />
+              <input
+                class="input"
+                data-testid="Password"
+                placeholder="Password"
+                type="password"
+              />
+              <img
+                alt="eye"
+                class="icon"
+                data-testid="eye"
+                height="18"
+                src="eye.png"
+                width="18"
+              />
+            </fieldset>
+            <span
+              class="helpText"
+              data-testid="passwordHelpText"
+            >
+              Minimum 8 Characters
+            </span>
+          </div>
+          <button
+            class="button"
+            disabled=""
+          >
+            Next
+          </button>
+        </div>
+        <p
+          class="footerText"
+        >
+          By clicking the "Next" button, you agree to creating a free account, and to
+           
+          <a
+            href="#terms-od-service"
+          >
+            Terms of Service
+          </a>
+           and 
+          <a
+            href="#privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;

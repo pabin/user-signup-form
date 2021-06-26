@@ -1,7 +1,6 @@
+import React from 'react';
 import { HEADING_DESCRIPTION, HEADING_TITLE } from '../constants/heading';
 import styles from './styles/heading.module.css';
-
-
 
 const Heading  = () => (
   <div className={styles.container}>
